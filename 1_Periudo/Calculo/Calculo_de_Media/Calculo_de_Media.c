@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 
     if (media >= 6)
     {
-        printf("Aluno aprovado!\n");
+    
     }
     else
     {
