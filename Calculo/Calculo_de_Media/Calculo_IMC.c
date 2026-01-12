@@ -50,9 +50,6 @@ int main(void)
     }
 
     printf("Obrigado por usar o calculador de IMC, %s!\n", nome);
-
-    printf("Aperte ENTER para sair...");
-    getchar();
-
+    
     return 0;
 }

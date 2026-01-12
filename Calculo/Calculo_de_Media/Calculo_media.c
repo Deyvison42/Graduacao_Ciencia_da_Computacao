@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     float nota1, nota2, nota3;
     float media;
@@ -26,7 +26,11 @@ int main(int argc, char const *argv[])
     {
         printf("Aluno reprovado!\n");
     }
-    
+
+       while (1) {
+        getchar();
+        break;
+    }
+
     return 0;
 }
-
