@@ -7,7 +7,7 @@ int main(void)
 // Variáveis da Carta A
 char estadoA[50];
 char cidadeA[50];
-unsigned int codigoA;
+int codigoA;
 int populacaoA;
 float areaA;
 float pibA;
@@ -17,7 +17,7 @@ float pib_per_capitaA;
 // Variáveis da Carta B
 char estadoB[50];
 char cidadeB[50];
-unsigned int codigoB;
+int codigoB;
 int populacaoB;
 float areaB;
 float pibB;
@@ -107,6 +107,7 @@ printf("Turismo: %s\n", turismoB ? "Sim" : "Nao");
 printf("Densidade Populacional: %.2f habitantes/km2\n", densidadeB);
 printf("PIB per Capita: R$ %f\n", pib_per_capitaB);
 
+return 0;
 
-    return 0;
+
 }
