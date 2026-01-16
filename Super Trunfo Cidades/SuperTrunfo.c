@@ -5,25 +5,25 @@ int main(void)
 /*Área de variáveis*/
 
 // Variáveis da Carta A
-char estadoA[50] = "RJ";
-char cidadeA[50] = "Belforoxo";
-int codigoA = 01;
-int populacaoA = 15;
-float areaA = 122221;
-float pibA = 68;
-int turismoA = 5;
+char estadoA[50];
+char cidadeA[50];
+int codigoA;
+int populacaoA;
+float areaA;
+float pibA;
+int turismoA;
 float densidadeA;
 float pib_per_capitaA;
 float Super_PoderA; 
 
 // Variáveis da Carta B
-char estadoB[50] =  "PE";
-char cidadeB[50] = "Recife";
-int codigoB = 02;
-int populacaoB = 6748;
-float areaB = 1200;
-float pibB = 30050;
-int turismoB = 30;
+char estadoB[30];
+char cidadeB[30];
+int codigoB;
+int populacaoB;
+float areaB;
+float pibB;
+int turismoB;
 float densidadeB;
 float pib_per_capitaB;
 float Super_PoderB;
@@ -35,7 +35,7 @@ float Resultado_Area;
 float Resultado_pib;
 float Resultado_Turismo;
 
-/* Cadastro de Cidade A 
+//Cadastro da CidadeA 
 printf("Cadastro da Cidade A\n");
 
 printf("Digite o nome do estado: ");
@@ -83,7 +83,7 @@ scanf("%f", &pibB);
 
 printf("Quantos Pontos Turisticos tem na cidede?");
 scanf("%d", &turismoB); 
-*/
+
 // Cálculo da densidade populacional, PIB per capita, Super e Resultado
 
 densidadeA = populacaoA / areaA;
@@ -123,7 +123,7 @@ printf("Codigo: %d\n", codigoB);
 printf("Populacao: %d\n", populacaoB);
 printf("Area: %.2f km2\n", areaB);
 printf("PIB: R$ %.2f Bilhoes\n", pibB);
-printf("Turismo: %s\n", turismoB ? "Sim" : "Nao");
+printf("Turismo: %d(Carta A venceu?) (%1.f)\n", turismoB, Resultado_Turismo);
 printf("Densidade Populacional: %.2f habitantes/km2\n", densidadeB);
 printf("PIB per Capita: R$ %f\n", pib_per_capitaB);
 
