@@ -95,7 +95,7 @@ pib_per_capitaB = pibB / populacaoB;
 Resultado_Populacao = populacaoA > populacaoB;
 Resultado_Area = areaA > areaB;
 Resultado_pib = pibA > pibB;
-Resultado_Turismo = turismoA > turismoB;
+Resultado_Turismo = turismoA >> turismoB;
 
 Super_PoderA = populacaoA + areaA + pibA + turismoA;
 Super_PoderB = populacaoB + areaB + pibB + turismoB;
