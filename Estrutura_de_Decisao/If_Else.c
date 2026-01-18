@@ -1,27 +1,16 @@
-#include <stdio.h>
+#include  <stdio.h>
 
 int main(){
 
-  int numero1, numero2;
+int num = 200;
+int num2 = 20;
 
-  printf("Digite o numero 1 ");
-  scanf("%i", &numero1);
+  if (num > num2 ){
+    printf("o numero 1 e maior que o numero 2");
+  }else{
+    printf("o numero 2 e maior que o numero 1");
+  };
 
-  printf("Digite o numero 2 ");
-  scanf("%i", &numero2);
-
-  if (numero1 > numero2){
-    printf("O numero 1 e maior");
-  }
-  if (numero1 == numero2)
-  {
-    printf("Os numeros sao iguais");
-  }
-  
-  else {
-    printf("o numero 2 e maior");
-  }
-
-  return 0;
+return 0;
 
 }
