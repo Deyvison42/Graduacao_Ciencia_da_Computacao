@@ -4,6 +4,7 @@
 
 int main() {
     int tabuleiro[TAM][TAM];
+    int jogador[TAM][TAM], alvo1, alvo2;
 
     
 
@@ -16,7 +17,7 @@ int main() {
 
     //NAVIO
     int navio = 3;
-
+    
     for (int i = 0; i < 3; i++){
       for (int j = 0; j < 3; j++){
         tabuleiro [8][j + 3] = navio;
@@ -30,18 +31,12 @@ int main() {
     
       }
     } 
-    
-    for (int i = 0; i < 10; i++)
-    {
+    for (int i = 0; i < 10; i++){
       for (int j = 0; j < 10; j++)
       {
         tabuleiro[0][j] = j;
       }
-      
     }
-    
-    
-
     // Exibe o tabuleiro
     for (int i = 0; i < TAM; i++) {
         for (int j = 0; j < TAM; j++) {
@@ -49,4 +44,8 @@ int main() {
         }
         printf("\n");
     }
+    //Jogador
+    printf("Onde quer jogar?");
+    scanf("%d", &alvo1);
+    scanf("%d", &alvo2);
 }

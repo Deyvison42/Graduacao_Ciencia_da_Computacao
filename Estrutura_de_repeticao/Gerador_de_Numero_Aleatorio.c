@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &contador);
     printf("Qual o teto dos numeros aleatorios?:\n");
     scanf("%d", &teto); // MAXIMO QUE O CODIGO VAI GERAR
-
+  
   for (int i = 1 ; i < teto; i++)
   {
     printf("O numero aleatorio e :%d\n", rand() % contador );
